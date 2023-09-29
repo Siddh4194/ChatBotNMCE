@@ -1,0 +1,17 @@
+@media (min-width: 700px) {
+   .nav h3{
+    font-size: 1.4em;
+   }
+   .ask-body button{
+    width: 3vw;
+    height: 3vh;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    margin: auto;
+    background-color: transparent;
+    float: right;
+    font-size: 3vh;
+    border: none;
+    margin-right: 1vw;
+  }
+  }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ChatBot</title>
+    <link rel="shortcut icon" href="/public/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/chatbot.css" />
+    
+    <!-- logo -->
+      <link rel="shortcut icon" type="image/x-icon" href="/images/mainlogo.ico" />   
+    <!-- javascript -->
+      <script src="/handler.js" defer></script>
+    <script src="/response.js" defer></script>
+</head>
+  <body>
+    <div class="feedBack1">
+      <h2>Your FeedBack</h2>
+      <h5>We would like your feedback to improve our website</h5>
+      <div class="feedCount">
+        <h5>What is your opinion.</h5>
+        <div class="smilies">
+          <button id="smile1" class="smile">☹️</button>
+          <button id="smile2" class="smile">😕</button>
+          <button id="smile3" class="smile">😐</button>
+          <button id="smile4" class="smile">😊</button>
+          <button id="smile5" class="smile">😍</button>
+        </div> 
+      </div>
+      <div class="catagory">
+        <h5>Please select your feedback catagory below.</h5>
+        <div>
+          <button class="catag">Suggestion</button>
+          <button class="catag">Something Is Not Quite Right</button>
+          <button class="catag">Compliment</button>
+        </div>  
+      </div>
+      <div class="feedmsg">
+        <h5>Please leave your feedback below.</h5>
+        <textarea name="" class="textarea" cols="40" rows="4"></textarea>
+        <button onclick="sendFeed()">Submit</button>
+      </div>
+    </div>
+      <div class="main">
+        <!-- navbar heading -->
+        <div class="nav1">
+          <div class="collageName">
+            <img src="/images/mainlogo.png" alt="Show" srcset="">
+            <h3>NMCOE.Peth</h3>
+          </div>
+          <div class="feedBack">
+            FeedBack
+          </div>
+        </div>
+        <!-- chatting screen -->
+        <div class="chatBody ">
+            <div class=" row welcome">
+              <div class="col-lg-12 col-md-12 col-sm-12 welcome-in">
+                <h2>Hello 😍 , WelCome To NMCOE 🎉</h2>
+                <p>Welcome to our Collage! We are so excited to have you join our Collage. We are committed to providing you with a high-quality education that will prepare you for success in college, career, and life.
+  
+                  We know that learning can be challenging, but we also believe that it can be fun and rewarding. We are here to support you every step of the way, and we are confident that you will achieve great things.
+                  
+                  We encourage you to be curious, ask questions, and take risks. We want you to explore your interests and talents, and we want you to find your voice.
+                  
+                  We are so glad that you are here. We can't wait to see what you will accomplish!</p>
+              </div>
+            </div>
+            <div class="row justify">
+              <div class="col-lg-4 col-md-4 col-sm-12 card info">
+                <h4 class="bg-color">Exprimental Model 🛞</h4>
+                <p>
+                  <span style="font-weight: 500;">I'm Campuse Guid, your creative and helpful collaborator.</span> I have limitations and won't always get it right, but your feedback will help me to improve.
+                  Give feedBack From the right corner tab.
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 card info">
+                <h4>Purpose</h4>
+                <p>Give informarion to the students about the campuse and admission process and give information about our collage.Students can ask the questions from the tabs and inputs.
+                  The chatbot is designed to help students with the admission process.
+                  The chatbot can provide students with resources and support.
+                </p>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12 card info">
+                <h4>🤗 Interested for admission</h4>
+                <p>If you are <span style="font-weight: 500; text-decoration: underline; text-decoration-color: rgb(72, 72, 214);">interested for admission</span>.Fill below form with right information our admission cell contact you shortly.</p>
+              </div>
+            </div>
+            <div class='form bot-message '>
+              <h3>Enter you details below.</h3>
+                <input class='in1' name='name' type='text' placeholder='Name'>
+                <input class='in2' type='text' name='wpno' placeholder='Whatsapp Number'>
+                <input class='in3' type='email' name='email' placeholder='Email'>
+                <div class=" buttons">
+                  <button type='submit' onclick="studentAdd()">Submit</button>
+                </div>
+            </div>
+          
+            <div class="bot-message buttons">
+              <button class="eleg">Eligibility Criteria</button>
+              <button class='dr-1'>Document Required</button>
+              <button class="program">Program Offered</button>
+              <button class="facilities">Facilities Offered</button><br/>
+              <button class="salient">Salient Feature</button>
+              <button class="affiliate">Affiliation</button>
+              <button class="acredition">Accredition</button>
+              <button class="scholarship">Government Scholarship</button>
+            </div>
+        </div>
+        <!-- text area -->
+        <div class="bottom">
+            <div class="ask-body">
+              <!-- <form action="/checkSpell" method="post"> -->
+                <input class="in" type="text" name="usermsg" autofocus autocomplete="off" placeholder="Ask a Question"/>
+                <button class="send" type="submit">
+                    <i class="fa-solid fa-paper-plane" style="color: white;"></i>
+                </button>
+              <!-- </form> -->
+                
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
+
+
+
+
